@@ -1,0 +1,31 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Logs / temp
+*.log
+*.tmp
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+
+# NetBeans
+/nbproject/private/
+/build/
+/dist/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
