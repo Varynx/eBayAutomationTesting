@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="EbayTestSuite">
-    <test verbose="2" preserve-order="true" name="ebaytest">
-        <classes>
-            <class name="ebaytest.SearchEbayTest"/>
 
+    <!-- Standalone tests: each class runs with its own browser instance -->
+    <test verbose="2" preserve-order="true" name="Standalone Tests">
+        <classes>
+<!--            <class name="ebaytest.RegistrationEbayTest"/>-->
+<!--            <class name="ebaytest.LoginEbayTest"/>-->
+<!--            <class name="ebaytest.SearchEbayTest"/> -->
+<!--            <class name="ebaytest.FiltersEbayTest"/> -->
+<!--            <class name="ebaytest.OffersEbayTest"/> -->
         </classes>
     </test>
+
+    <!-- E2E tests: runs in order to simulate a real user purchase journey -->
+    <test verbose="2" preserve-order="true" name="E2E Purchase Flow">
+        <classes>
+<!--            <class name="ebaytest.LoginEbayTest"/>-->
+<!--            <class name="ebaytest.CartEbayTest"/>-->
+<!--            <class name="ebaytest.CheckoutEbayTest"/>-->
+<!--            <class name="ebaytest.PaymentEbayTest"/>-->
+        </classes>
+    </test>
+
 </suite>
