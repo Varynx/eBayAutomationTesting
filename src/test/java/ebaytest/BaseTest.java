@@ -1,5 +1,6 @@
 package ebaytest;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,7 +14,9 @@ import java.util.Map;
 
 public class BaseTest {
 
+    // declared as fields, accessible to all subclasses and methods
     protected WebDriver driver;
+    protected JavascriptExecutor js;
 
     @BeforeClass
     public void setUp() {
@@ -41,6 +44,8 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.ebay.com");
+
+        js = (JavascriptExecutor) driver;
     }
 
     @AfterClass

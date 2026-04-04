@@ -15,8 +15,16 @@
                         <include name="testLogout"/>
                     </methods>
                 </class>
-<!--            <class name="ebaytest.SearchEbayTest"/> -->
-<!--            <class name="ebaytest.FiltersEbayTest"/> -->
+
+                <class name="ebaytest.FiltersEbayTest">
+                    <methods>
+                        <include name="testBuyItNowFilter"/>
+                        <include name="testConditionNewFilter"/>
+                        <include name="testPriceRangeFilter"/>
+                        <include name="testSortByPriceLowest"/>
+                        <include name="testSoldItemsFilter"/>
+                    </methods>
+                </class>
 <!--            <class name="ebaytest.OffersEbayTest"/> -->
         </classes>
     </test>
