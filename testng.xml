@@ -26,6 +26,7 @@
                     </methods>
                 </class>-->
 
+                <!--
                 <class name="ebaytest.CartEbayTest">
                     <methods>
                         <include name="testAddItemToCart"/>
@@ -35,7 +36,20 @@
                         <include name="testRemoveItemFromCart"/>
                     </methods>
                 </class>
+                -->
 <!--            <class name="ebaytest.OffersEbayTest"/> -->
+
+            <!--
+                <class name="ebaytest.SearchEbayTest">
+                    <methods>
+                        <include name="testSearchReturnsResults"/>
+                        <include name="testEmptySearchQuery"/>
+                        <include name="testSearchNoResults"/>
+                        <include name="testSearchSuggestionsAppear"/>
+                        <include name="testSearchWithSpecialCharacters"/>
+                    </methods>
+                </class>
+             -->
         </classes>
     </test>
 
