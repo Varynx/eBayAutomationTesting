@@ -6,7 +6,7 @@
     <test verbose="2" preserve-order="true" name="Standalone Tests">
         <classes>
 <!--            <class name="ebaytest.RegistrationEbayTest"/>-->
-                <class name="ebaytest.LoginEbayTest">
+                <!--<class name="ebaytest.LoginEbayTest">
                     <methods>
                         <include name="testSuccessfulLogin"/>
                         <include name="testInvalidCredentials"/>
@@ -23,6 +23,16 @@
                         <include name="testPriceRangeFilter"/>
                         <include name="testSortByPriceLowest"/>
                         <include name="testSoldItemsFilter"/>
+                    </methods>
+                </class>-->
+
+                <class name="ebaytest.CartEbayTest">
+                    <methods>
+                        <include name="testAddItemToCart"/>
+                        <include name="testCartDisplaysAddedItem"/>
+                        <include name="testUpdateItemQuantity"/>
+                        <include name="testCartTotalUpdatesWithQuantity"/>
+                        <include name="testRemoveItemFromCart"/>
                     </methods>
                 </class>
 <!--            <class name="ebaytest.OffersEbayTest"/> -->
