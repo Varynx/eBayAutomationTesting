@@ -50,6 +50,18 @@
                     </methods>
                 </class>
              -->
+            <!--
+            <class name="ebaytest.NavigationEbayTest">
+                <methods>
+                    <include name="testLogoNavigatesToHome"/>
+                    <include name="testCategoryNavigation"/>
+                    <include name="testShopByCategoryNavigation"/>
+                    <include name="testHeaderNavigation"/>
+                    <include name="testHelpAndContactNavigation"/>
+                    <include name="testBrowserBackNavigation"/>
+                </methods>
+            </class>
+            -->
         </classes>
     </test>
 
