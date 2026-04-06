@@ -62,6 +62,19 @@
                 </methods>
             </class>
             -->
+
+
+<!--            <class name="ebaytest.ProductEbayTest">-->
+<!--                <methods>-->
+<!--                    <include name="testImageGallery"/>-->
+<!--                    <include name="testSellerInformationDisplay"/>-->
+<!--                    <include name="testShippingReturnsPaymentDisplay"/>-->
+<!--                    <include name="testItemSpecificationsDisplay"/>-->
+<!--                    <include name="testPriceAndAvailability"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+
         </classes>
     </test>
 
