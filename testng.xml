@@ -74,6 +74,15 @@
 <!--                </methods>-->
 <!--            </class>-->
 
+<!--            <class name = "ebaytest.WatchlistEbayTest">-->
+<!--                <methods>-->
+<!--                    <include name="testAddItemToWatchlist"/>-->
+<!--                    <include name="testWatchlistDisplaysAddedItem"/>-->
+<!--                    <include name="testWatchlistItemCount"/>-->
+<!--                    <include name="testViewItemFromWatchlist"/>-->
+<!--                    <include name="testRemoveItemFromWatchlist"/>-->
+<!--                </methods>-->
+<!--            </class>-->
 
         </classes>
     </test>
