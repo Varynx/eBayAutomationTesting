@@ -25,8 +25,9 @@ public class FiltersEbayTest extends BaseTest {
         Thread.sleep(1000);
 
         // The 'Buy It Now' in the bar above the items is located and clicked
-        WebElement searchInput = driver.findElement(By.xpath("//*[@id=\"mainContent\"]/div[2]/div[2]/div[2]/div[2]/div[1]/div/ul/li[3]/a"));
-        searchInput.click();
+        List<WebElement> tabs = driver.findElements(By.cssSelector(".srp-format-tabs-h2"));
+        WebElement buyItNowTab = tabs.get(2);
+        buyItNowTab.click();
 
         Thread.sleep(1000);
 

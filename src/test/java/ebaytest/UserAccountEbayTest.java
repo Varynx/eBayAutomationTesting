@@ -18,7 +18,7 @@ public class UserAccountEbayTest extends BaseTest {
 
     // Replace with valid eBay credentials
     private static final String VALID_EMAIL = "";
-    private static final String VALID_PASSWORD = ".";
+    private static final String VALID_PASSWORD = "";
 
     // Simulates human pause between actions, used interchangeably with Thread.sleep(ms)
     private void humanDelay() throws InterruptedException {
