@@ -29,7 +29,6 @@ public class WatchlistEbayTest extends BaseTest {
     // Login once before all tests
     @BeforeClass
     public void loginToEbay() throws InterruptedException {
-        super.setUp();
 
         driver.get(LOGIN_URL);
         humanDelay();
