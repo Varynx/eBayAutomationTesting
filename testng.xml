@@ -1,56 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="EbayTestSuite">
+
+<!-- run all the 8 classes in parallel-->
+<suite name="EbayTestSuite" parallel="classes" thread-count="8">
 
     <!-- Standalone tests: each class runs with its own browser instance -->
     <test verbose="2" preserve-order="true" name="Standalone Tests">
         <classes>
-<!--            <class name="ebaytest.RegistrationEbayTest"/>-->
-                <!--<class name="ebaytest.LoginEbayTest">
-                    <methods>
-                        <include name="testSuccessfulLogin"/>
-                        <include name="testInvalidCredentials"/>
-                        <include name="testEmptyEmailValidation"/>
-                        <include name="testForgotPasswordLinkIsDisplayed"/>
-                        <include name="testLogout"/>
-                    </methods>
-                </class>
 
-                <class name="ebaytest.FiltersEbayTest">
-                    <methods>
-                        <include name="testBuyItNowFilter"/>
-                        <include name="testConditionNewFilter"/>
-                        <include name="testPriceRangeFilter"/>
-                        <include name="testSortByPriceLowest"/>
-                        <include name="testSoldItemsFilter"/>
-                    </methods>
-                </class>-->
+            <class name="ebaytest.LoginEbayTest">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testInvalidCredentials"/>
+                    <include name="testEmptyEmailValidation"/>
+                    <include name="testForgotPasswordLinkIsDisplayed"/>
+                    <include name="testLogout"/>
+                </methods>
+            </class>
 
-                <!--
-                <class name="ebaytest.CartEbayTest">
-                    <methods>
-                        <include name="testAddItemToCart"/>
-                        <include name="testCartDisplaysAddedItem"/>
-                        <include name="testUpdateItemQuantity"/>
-                        <include name="testCartTotalUpdatesWithQuantity"/>
-                        <include name="testRemoveItemFromCart"/>
-                    </methods>
-                </class>
-                -->
-<!--            <class name="ebaytest.OffersEbayTest"/> -->
+            <class name="ebaytest.FiltersEbayTest">
+                <methods>
+                    <include name="testBuyItNowFilter"/>
+                    <include name="testConditionNewFilter"/>
+                    <include name="testPriceRangeFilter"/>
+                    <include name="testSortByPriceLowest"/>
+                    <include name="testSoldItemsFilter"/>
+                </methods>
+            </class>
 
-            <!--
-                <class name="ebaytest.SearchEbayTest">
-                    <methods>
-                        <include name="testSearchReturnsResults"/>
-                        <include name="testEmptySearchQuery"/>
-                        <include name="testSearchNoResults"/>
-                        <include name="testSearchSuggestionsAppear"/>
-                        <include name="testSearchWithSpecialCharacters"/>
-                    </methods>
-                </class>
-             -->
-            <!--
+            <class name="ebaytest.CartEbayTest">
+                <methods>
+                    <include name="testAddItemToCart"/>
+                    <include name="testCartDisplaysAddedItem"/>
+                    <include name="testUpdateItemQuantity"/>
+                    <include name="testCartTotalUpdatesWithQuantity"/>
+                    <include name="testRemoveItemFromCart"/>
+                </methods>
+            </class>
+
+            <class name="ebaytest.SearchEbayTest">
+                <methods>
+                    <include name="testSearchReturnsResults"/>
+                    <include name="testEmptySearchQuery"/>
+                    <include name="testSearchNoResults"/>
+                    <include name="testSearchSuggestionsAppear"/>
+                    <include name="testSearchWithSpecialCharacters"/>
+                </methods>
+            </class>
+
             <class name="ebaytest.NavigationEbayTest">
                 <methods>
                     <include name="testLogoNavigatesToHome"/>
@@ -61,18 +58,39 @@
                     <include name="testBrowserBackNavigation"/>
                 </methods>
             </class>
-            -->
+
+            <class name="ebaytest.ProductEbayTest">
+                <methods>
+                    <include name="testImageGallery"/>
+                    <include name="testSellerInformationDisplay"/>
+                    <include name="testShippingReturnsPaymentDisplay"/>
+                    <include name="testItemSpecificationsDisplay"/>
+                    <include name="testPriceAndAvailability"/>
+                </methods>
+            </class>
+
+            <class name = "ebaytest.WatchlistEbayTest">
+                <methods>
+                    <include name="testAddItemToWatchlist"/>
+                    <include name="testWatchlistDisplaysAddedItem"/>
+                    <include name="testWatchlistItemCount"/>
+                    <include name="testViewItemFromWatchlist"/>
+                    <include name="testRemoveItemFromWatchlist"/>
+                </methods>
+            </class>
+
+            <class name = "ebaytest.UserAccountEbayTest">
+                <methods>
+                    <include name="testViewAccountSettings"/>
+                    <include name="testAccountSettingsCardsDisplayed"/>
+                    <include name="testAccountSubLinksNavigation"/>
+                    <include name="testPersonalInfoDetailsDisplayed"/>
+                    <include name="testEditPersonalInfoDetails"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
 
-    <!-- E2E tests: runs in order to simulate a real user purchase journey -->
-    <test verbose="2" preserve-order="true" name="E2E Purchase Flow">
-        <classes>
-<!--            <class name="ebaytest.LoginEbayTest"/>-->
-<!--            <class name="ebaytest.CartEbayTest"/>-->
-<!--            <class name="ebaytest.CheckoutEbayTest"/>-->
-<!--            <class name="ebaytest.PaymentEbayTest"/>-->
-        </classes>
-    </test>
 
 </suite>
