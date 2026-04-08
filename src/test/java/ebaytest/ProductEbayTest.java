@@ -19,7 +19,7 @@ public class ProductEbayTest extends BaseTest {
     @BeforeMethod
     public void before() throws InterruptedException {
 
-        // Navigate to product
+        // Navigate to product, /itm/number can be changed according to listing
         driver.get("https://www.ebay.com/itm/366231173654 ");
         Thread.sleep(500);
     }

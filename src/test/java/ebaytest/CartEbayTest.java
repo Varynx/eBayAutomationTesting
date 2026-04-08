@@ -11,7 +11,7 @@ import java.util.List;
 public class CartEbayTest extends BaseTest {
 
     // Change 'product-id' to true product id as needed, assumption that there are n > 1 products available
-    private static final String ITEM_URL = "https://www.ebay.com/itm/product-id";
+    private static final String ITEM_URL = "https://www.ebay.com/itm/205532712069";
     private static final String CART_URL = "https://cart.ebay.com/";
 
     // Gets the URL of the current product, will be used as the basis for each test case since they run sequentially
